@@ -27,17 +27,18 @@ a{
 }
 .head-text{
   height: 250px;
-  width: 1000px;
   margin: 20px auto 20px;
   background-color: pink;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
+.box-centrato{
+  height: 200px;
+  width: 60%;
+  margin: auto;
+  background-color: aquamarine;
+
 }
 
 
