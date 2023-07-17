@@ -3,3 +3,41 @@
   margin: 0;
   box-sizing: border-box;
 }
+header{
+  background-color: blue;
+}
+header>nav{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;  width: 85%;
+  margin: auto;
+  background-color: cadetblue;
+  padding: 10px 0px;
+}
+a{
+  text-decoration: none;
+}
+.nav-link>a{
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.logo{
+/* img logo da inserire */
+}
+.head-text{
+  height: 250px;
+  width: 1000px;
+  margin: 20px auto 20px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
