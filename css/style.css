@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 header{
   background-color: blue;
 }
@@ -44,37 +49,56 @@ header>nav{
   margin: auto;
 }
 /* MAIN */
-.main-box{
-  width: 85%;
-  height: 250px;
-  margin: 20px auto;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-}
-.box-colored{
-  background-color: lightgrey;
-}
-.main-img{
-  width: 60%;
-  background-color: brown;
-}
-.main-txt{
-  width: 40%;
-  background-color: blueviolet;
-}
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-#box-vert{
-  width: 85%;
-  height: calc(100% / 3);
+.section-row{
+  margin: 20px 0px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  background-color: green;
-
+  justify-content: center;
+}
+.section-column{
+  margin: 20px 0px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-box{
+  width: 85%;
+  margin:20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.section-row .section-txt{
+  height: 100%;
+  width: 30%;
+  background-color: aquamarine;
+}
+.section-row .section-img{
+  height: 100%;
+  width: 70%;
+  background-color: bisque;
 }
 
+section.colored{
+  background-color: lightgray;
+}
+.section-column{
+  width: 85%;
+  margin: auto;
+}
+.section-column .section-txt{
+height: 20%;
+width: 100%;
+}
+.section-column .section-img{
+height: 60%;
+width: 100%;
+}
+.section-column .section-cta{
+height: 20%;
+width: 100%;
+}
 
